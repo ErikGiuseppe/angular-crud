@@ -5,13 +5,18 @@ import { ClienteDetailComponent } from './components/cliente-detail/cliente-deta
 import { ClienteComponent } from './components/cliente/cliente.component';
 import { ListPokemonsComponent } from './components/list-pokemons/list-pokemons.component';
 import { TabelaEstadoComponent } from './components/tabela-estado/tabela-estado.component';
+import { FornecedorComponent } from './components/fornecedor/fornecedor.component';
+import { FornecedorDetailComponent } from './components/fornecedor-detail/fornecedor-detail.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponentComponent },
   { path: 'nova-rota', component: RotasComponentComponent },
   { path: 'cliente/:id', component: ClienteDetailComponent },
   { path: 'cliente', component: ClienteComponent },
+  {path:'fornecedor/:id',component: FornecedorDetailComponent},
+  {path:'fornecedor',component:FornecedorComponent},
   { path: 'pokemon', component: ListPokemonsComponent },
   { path: 'estado', component: TabelaEstadoComponent },
   { path: '**', component: HomeComponentComponent },
+  
 ];
